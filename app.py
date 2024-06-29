@@ -1,7 +1,7 @@
 import streamlit as st
-import page1
-import page2
-import page3
+import page1 
+import page2 
+import page3 
 
 st.set_page_config(layout="wide")
 
