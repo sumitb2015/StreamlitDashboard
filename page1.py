@@ -5,6 +5,8 @@ import streamlit as st
 import json
 import os
 import asyncio
+import warnings
+warnings.filterwarnings("ignore")
 
 # File to store additional symbols
 SYMBOLS_FILE = 'additional_symbols.json'
