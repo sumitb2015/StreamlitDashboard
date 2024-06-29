@@ -1,0 +1,26 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    sameer:
+      email: rbriggs@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: sameer
+      password: $2b$12$fgvOwN/MDqovi8CbifOFzepYJcXh5tPTPM6pyF5OmPxlUecBRpy9S
+    sumit:
+      email: sumit@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: sumit
+      password: $2b$12$iQQglZ3ihJZXN8qYHcISn.mulqFaFKdikf.zeocW3S.kbZ.InSD9m
+    sumitb2015:
+      email: sumitb2015@gmail.com
+      logged_in: false
+      name: Sumit Bandyopadhyay
+      password: $2b$12$pkvFFK7z0WuTnHvqufYFeeNQa2gGDRbPSxp28siFpovxWLpXQUVn2
+pre-authorized:
+  emails:
+  - melsby@gmail.com

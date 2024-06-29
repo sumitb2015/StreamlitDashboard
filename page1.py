@@ -24,12 +24,16 @@ def save_additional_symbols(symbols):
         json.dump(symbols, file)
 
 def fetch_latest_price_and_change(symbol):
-    stock = yf.Ticker(symbol)
-    hist = stock.history(period="5d")
-    current_price = hist['Close'][-2]
-    previous_close = hist['Close'][-3]
-    price_change = current_price - previous_close
-    price_change_percentage = (price_change / previous_close) * 100
+    try:
+        stock = yf.Ticker(symbol)
+        hist = stock.history(period="5d")
+        current_price = hist['Close'][-2]
+        previous_close = hist['Close'][-3]
+        price_change = current_price - previous_close
+        price_change_percentage = (price_change / previous_close) * 100
+    except Exception as e:
+        st.error(f"Error fetching data for {symbol}: {e}")
+        return None
     return current_price, price_change, price_change_percentage
 
 def display_price_with_arrow(label, price, change, change_percentage):
