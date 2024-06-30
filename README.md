@@ -122,6 +122,6 @@ gcloud app logs tail -s default
 #### Start the streamlit server
 
 ```bash
-  streamlit run app.py --server.port $PORT --server.enableCORS false
+  streamlit run app.py --server.port 8080 
 ```
 
