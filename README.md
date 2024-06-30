@@ -125,3 +125,7 @@ gcloud app logs tail -s default
   streamlit run app.py --server.port 8080 
 ```
 
+## References
+- [mkhorasani/Streamlit-Authenticator](https://github.com/mkhorasani/Streamlit-Authenticator?tab=readme-ov-file)
+
+
